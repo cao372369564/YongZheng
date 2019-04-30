@@ -1,0 +1,69 @@
+.cooperation{
+    width: 1190px;
+    margin: 70px auto;
+
+    >h2{
+        margin-top: 20px;
+        text-align: center;
+        letter-spacing: 10px;
+        font-size: 40px;
+        background: linear-gradient(to right,rgb(250, 60, 104) 2%,rgb(190, 164, 116));
+        color: #fff;
+        border-radius: 40px;
+        padding: 10px 0;
+    }
+
+    >a{
+        position: fixed;
+        right: 5%;
+        bottom: 5%;
+        text-decoration: none;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        border-radius: 50%;
+        background-color: #444;
+    }
+    
+    >ul{
+        width: 100%;
+
+        >li{
+            width: 350px;
+            height: 280px;
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+
+            >img{
+                width: 350px;
+                height: 90%;
+                // border: 10px solid rgb(190, 164, 116);
+                border-radius: 40px;
+                padding: 1px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+
+            >img:hover{
+                transform: scale(1.2) ;
+                transition: transform 1s;
+            }
+            
+            >span{
+                display: flex;
+                justify-content: center;
+                padding-left: 30px;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 30px;
+                color: #222;
+            }
+            
+        }
+        
+    }
+    
+}
