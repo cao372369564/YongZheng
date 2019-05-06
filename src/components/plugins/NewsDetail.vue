@@ -2,8 +2,8 @@
     <div class="news-detail">
         <el-row>
             <el-col :span='5'>
-                <div class='title' v-for='(ele,index) in newsCatalog' :key="index + '_' ">
-                    <h4 @click='onTap(index)'>{{ele}}</h4>
+                <div class="title" v-for='(ele,index) in newsCatalog' :key="index + '_' ">
+                    <h4 :class="[curIndex == index ? 'active' : '']" @click='onTap(index)'>{{ele}}</h4>
                 </div>
             </el-col>
             <el-col :span='19'>
@@ -93,7 +93,13 @@ export default {
                         border: 1px solid #999;
                         border-radius: 20px;
                         background: linear-gradient(to left,#f8f8f8,#999); 
-                        cursor: pointer;                       
+                        cursor: pointer;   
+                        
+                        &.active{
+                            color: #fff;
+                            background: linear-gradient(to left,#999,#222);
+                        }
+                        
                     }
 
                     >h4:hover{
